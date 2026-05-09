@@ -8,43 +8,43 @@
 </head>
 <body>
 
-    <div class="assinar">
-
+<div class="assinar">
     <h1>Assinaturas</h1>
 
-    <label for="nome">Nome:</label><br>
-    <input type="text" id="nome" name="nome"  placeholder="Digite seu nome"><br><br>
+    <label for="nome">Nome:</label>
+    <input type="text" id="nome" name="nome" placeholder="Digite seu nome">
 
-    <label for="email">Email:</label><br>
-    <input type="email" id="email" name="email" placeholder="Ex: gabriel@gmail.com" required>
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" placeholder="Ex: gabriel@gmail.com">
 
-    <h3>Selecionar Plano</h3>
-
+    <label for="selecionar">Selecionar Plano</label>
     <select name="Escolha">
-    <option value="vazio"></option>
-    <option value="plano mensal">Plano Mensal</option>
-    <option value="plano anual" selected>Plano Anual</option>
+        <option value="vazio"></option>
+        <option value="plano mensal">Plano Mensal</option>
+        <option value="plano anual" selected>Plano Anual</option>
     </select>
     
     <h3>Forma de Pagamento:</h3>
 
-    <input type="radio" id="pix" name="pagamento" value="pix" nclick="checkRadio(this)" >
-    <label for="pix"><img src= "https://geradornv.com.br/wp-content/themes/v1.46.2---d98fz8ftmpgnnadyfwgja82xk4ua6xug/assets/images/logos/pix/logo-pix-954x339.png"></label><br><br>
+    <div class="metodos-pagamento">
+        <div class="opcao-pagamento">
+            <input type="radio" id="pix" name="pagamento" value="pix">
+            <label for="pix"><img src="https://geradornv.com.br/wp-content/themes/v1.46.2---d98fz8ftmpgnnadyfwgja82xk4ua6xug/assets/images/logos/pix/logo-pix-954x339.png"></label>
+        </div>
 
-    <input type="radio" id="elo" name="pagamento" value="elo"  nclick="checkRadio(this)" >
-    <label for="elo"><img src= "https://upload.wikimedia.org/wikipedia/commons/thumb/d/da/Elo_card_association_logo_-_black_text.svg/1280px-Elo_card_association_logo_-_black_text.svg.png"></label><br><br>
+        <div class="opcao-pagamento">
+            <input type="radio" id="elo" name="pagamento" value="elo">
+            <label for="elo"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/da/Elo_card_association_logo_-_black_text.svg/1280px-Elo_card_association_logo_-_black_text.svg.png"></label>
+        </div>
 
-    <input type="radio" id="mastercard" name="pagamento" value="mastercard"  nclick="checkRadio(this)" >
-    <label for="mastercard"><img src= "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b7/MasterCard_Logo.svg/1280px-MasterCard_Logo.svg.png"></label><br><br>
-
-    </form>
-
-    <button>Assinar Plano</button>
-
+        <div class="opcao-pagamento">
+            <input type="radio" id="mastercard" name="pagamento" value="mastercard">
+            <label for="mastercard"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b7/MasterCard_Logo.svg/1280px-MasterCard_Logo.svg.png"></label>
+        </div>
     </div>
 
+    <button>Assinar Plano</button>
+</div>
 
-    
-    
 </body>
 </html>
